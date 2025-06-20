@@ -252,6 +252,29 @@
         icon.classList.add("fa-bars");
       }
     });
+    
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+  const navLinks = document.querySelectorAll("#mobile-menu a");
+
+  // Toggle mobile nav on click
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("show"); // toggle slide
+    if (mobileMenu.classList.contains("show")) {
+      menuIcon.classList.replace("fa-bars", "fa-times");
+    } else {
+      menuIcon.classList.replace("fa-times", "fa-bars");
+    }
+  });
+
+  // Hide mobile nav when any link is clicked
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("show");
+      menuIcon.classList.replace("fa-times", "fa-bars");
+    });
+  });
 
     const counters = document.querySelectorAll('.counter');
     const observer = new IntersectionObserver(entries => {
