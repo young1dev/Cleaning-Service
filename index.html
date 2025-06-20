@@ -249,19 +249,6 @@
     const btn = document.getElementById("menu-btn");
     const menu = document.getElementById("mobile-menu");
     const icon = document.getElementById("menu-icon");
-
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-      if (!menu.classList.contains("hidden")) {
-        menu.classList.add("mobile-menu-enter-active");
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-times");
-      } else {
-        menu.classList.remove("mobile-menu-enter-active");
-        icon.classList.remove("fa-times");
-        icon.classList.add("fa-bars");
-      }
-    });
     
   const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
