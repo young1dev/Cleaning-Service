@@ -18,6 +18,11 @@
     .overlay {
       background: rgba(0, 0, 0, 0.6);
     }
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    
     .counter {
       font-size: 2rem;
       font-weight: bold;
@@ -44,7 +49,7 @@
 <body class="text-gray-100 bg-gray-900 overflow-x-hidden">
   <!-- Navbar -->
   <header class="fixed w-full z-50 top-0 left-0 w-full">
-    <nav class="bg-gray-900 bg-opacity-80 backdrop-blur-md p-4 flex justify-between items-center">
+    <nav class="bg-gray-900 bg-opacity-80 backdrop-blur-md p-4 flex justify-between items-center w-full">
       <h1 class="text-2xl font-bold">AAA Sparkling</h1>
       <div class="space-x-6 hidden md:flex">
         <a href="#services" class="hover:text-blue-400 transition">Services</a>
@@ -59,7 +64,7 @@
         <i id="menu-icon" class="fas fa-bars"></i>
       </button>
     </nav>
-    <div id="mobile-menu" class="md:hidden absolute top-full right-0 flex flex-col items-start p-4 bg-gray-900 w-2/3 space-y-4 transition duration-300 ease-in-out shadow-lg z-40 mobile-menu-enter">
+    <div id="mobile-menu" class="md:hidden fixed top-16 right-0 flex flex-col items-start p-4 bg-gray-900 w-2/3 space-y-4 transition duration-300 ease-in-out shadow-lg z-40 mobile-menu-enter">
       <a href="#services" class="hover:text-blue-400 transition">Services</a>
       <a href="#about" class="hover:text-blue-400 transition">About</a>
       <a href="#work" class="hover:text-blue-400 transition">Work</a>
