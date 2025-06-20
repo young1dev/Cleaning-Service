@@ -22,10 +22,6 @@
       font-weight: bold;
       color: #60a5fa;
     }
-    .mobile-menu-enter {
-      opacity: 0;
-      transform: translateX(100%);
-    }
     .mobile-menu-enter-active {
       opacity: 1;
       transform: translateX(0);
@@ -55,7 +51,7 @@
         <a href="#work" class="hover:text-blue-400 transition">Work</a>
         <a href="#equipment" class="hover:text-blue-400 transition">Equipment</a>
         <a href="#pricing" class="hover:text-blue-400 transition">Pricing</a>
-        <a href="#testimonial" class="hover:text-blue-400 transition">Testimonial</a>
+        <a href="#testimonials" class="hover:text-blue-400 transition">Testimonial</a>
         <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
       </div>
       <button id="menu-btn" class="md:hidden text-white text-2xl">
@@ -142,7 +138,7 @@
   <section id="work" class="py-16 px-4" data-aos="fade-up">
     <h2 class="text-3xl font-bold text-center mb-10">Completed Work</h2>
     <div class="grid md:grid-cols-3 gap-6">
-      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6956" alt="Cleaned Office" class="rounded-lg shadow" data-aos="fade-up">
+      <img src="./images/office.jpg" alt="Cleaned Office" class="rounded-lg shadow" data-aos="fade-up">
       <img src="https://images.unsplash.com/photo-1596900948632-f8989dc7f672" alt="Cleaned Living Room" class="rounded-lg shadow" data-aos="fade-up">
       <img src="https://images.unsplash.com/photo-1616627987145-60f35c1df875" alt="Cleaned Kitchen" class="rounded-lg shadow" data-aos="fade-up">
     </div>
@@ -246,10 +242,6 @@
   <script>
     AOS.init({ duration: 800, easing: 'ease-in-out' });
 
-    const btn = document.getElementById("menu-btn");
-    const menu = document.getElementById("mobile-menu");
-    const icon = document.getElementById("menu-icon");
-    
   const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
   const menuIcon = document.getElementById("menu-icon");
